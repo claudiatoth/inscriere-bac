@@ -661,6 +661,14 @@ section { padding: 80px 0; }
   margin: 6px 0 0;
   text-align: left;
 }
+.field-hint {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--gray-warm);
+  margin-top: 6px;
+}
+.field-hint strong { color: var(--green-darker); }
 </style>
 </head>
 <body>
@@ -706,9 +714,10 @@ section { padding: 80px 0; }
         </div>
 
         <div class="field">
-          <label for="phone">Număr de telefon *</label>
+          <label for="phone">Număr de telefon (WhatsApp) *</label>
           <input type="tel" id="phone" name="phone" required autocomplete="tel" placeholder="Ex: +49 176 1234567">
           <div class="error-msg">Te rog completează numărul de telefon.</div>
+          <p class="field-hint">Scrie numărul cu prefixul țării: <strong>+49</strong> Germania &middot; <strong>+43</strong> Austria &middot; <strong>+41</strong> Elveția &middot; <strong>+40</strong> România.</p>
         </div>
 
         <div class="consent-field">
@@ -1018,9 +1027,10 @@ form.addEventListener('submit', async e => {
 
   // Redirect MEREU la Calendly cu date pre-completate (nume, email, telefon)
   const calendlyUrl = new URL(CALENDLY_BASE);
-  calendlyUrl.searchParams.set('name', fullName);
+  calendlyUrl.searchParams.set('first_name', firstName);
+  calendlyUrl.searchParams.set('last_name', lastName);
   calendlyUrl.searchParams.set('email', email);
-  calendlyUrl.searchParams.set('a1', phone);
+  calendlyUrl.searchParams.set('a1', phone.replace(/\s+/g, ''));
   calendlyUrl.searchParams.set('utm_source', 'GHL_BAC_landing');
   calendlyUrl.searchParams.set('utm_medium', 'funnel');
   calendlyUrl.searchParams.set('utm_campaign', 'BAC_consultanta');
