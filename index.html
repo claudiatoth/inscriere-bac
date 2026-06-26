@@ -898,17 +898,14 @@ document.querySelectorAll('.faq-question').forEach(q => {
 /* ===== CONFIG ===== */
 const GHL_API_BASE = 'https://services.leadconnectorhq.com';
 const GHL_LOCATION_ID = '3LqZHbDbZtP4PqdsObzb';
-/* SECURITATE: NU punem token GHL pe pagina publica (s-ar expune in View Source).
-   Lead-ul ajunge in GHL prin integrarea nativa Calendly -> GHL la programare.
-   Daca vrei captura la submit (inainte de Calendly), genereaza un PIT cu scope
-   MINIM (doar contacts.write + opportunities.write) si pune-l aici. */
-const GHL_PUBLIC_PIT = '';
+/* Token GHL cu scope MINIM: doar contacts.write (adauga/editeaza contact).
+   Integrarea "BAC Pagina Publica", generat 26 iun 2026. E vizibil in sursa paginii,
+   dar NU poate citi sau sterge nimic - doar adauga contacte. Daca e abuzat cu spam,
+   revoca-l din GHL Settings > Private Integrations si pune altul. */
+const GHL_PUBLIC_PIT = 'pit-8b8ba57b-cff7-4aa3-aad2-5ff9247605d1';
 
 const CALENDLY_BASE = 'https://calendly.com/d/ck8r-n46-gq2/intalnire-de-consultan-a-1-1';
 const BAC_TAG = 'inscriere 1 la 1';
-const PIPELINE_ID = 'kKXKRLCzimN51KOPidMG';
-const STAGE_ID_BAC_INITIAT = 'c465dded-a7ab-4793-aed0-f6d1334b0d45';
-const ASSIGNED_TO_USER_ID = 'K85lSlHqeAuggY3Aa549'; // Claudia Toth
 
 /* ===== FORM SUBMIT ===== */
 const form = document.getElementById('bacForm');
@@ -1007,25 +1004,7 @@ form.addEventListener('submit', async e => {
         })
       });
       if (resp.ok) {
-        const cd = await resp.json();
-        const contactId = cd.contact?.id || cd.id;
-        if (contactId) {
-          fetch(`${GHL_API_BASE}/opportunities/`, {
-            method: 'POST',
-            headers: {
-              'Authorization': `Bearer ${GHL_PUBLIC_PIT}`,
-              'Version': '2021-07-28',
-              'Content-Type': 'application/json',
-              'Accept': 'application/json'
-            },
-            body: JSON.stringify({
-              pipelineId: PIPELINE_ID, locationId: GHL_LOCATION_ID,
-              name: `BAC - ${fullName}`, pipelineStageId: STAGE_ID_BAC_INITIAT,
-              status: 'open', contactId: contactId, monetaryValue: 0,
-              assignedTo: ASSIGNED_TO_USER_ID, source: 'Landing Page BAC'
-            })
-          }).catch(() => {});
-        }
+        console.log('Contact creat in GHL');
       }
     } catch (err) {
       console.warn('GHL sync skipped (non-fatal):', err);
