@@ -608,6 +608,23 @@ section { padding: 80px 0; }
   margin-right: 8px;
 }
 @keyframes spin { to { transform: rotate(360deg); } }
+.privacy-link {
+  display: inline-block;
+  margin-top: 4px;
+  padding: 10px 22px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--green-darker);
+  text-decoration: none;
+  border: 1.5px solid var(--soft-divider);
+  border-radius: 8px;
+  transition: all 0.2s;
+}
+.privacy-link:hover {
+  border-color: var(--green-primary);
+  color: var(--green-primary);
+}
 </style>
 </head>
 <body>
@@ -621,41 +638,10 @@ section { padding: 80px 0; }
 <section class="hero">
   <div class="container">
     <p class="hero-eyebrow">Întâlnire 1 la 1 · Gratuit · 30 de minute</p>
-    <h1>Programează o <em>discuție</em> 1 la 1 cu mine<br>despre programul de la 0 la B2</h1>
-    <div class="hero-divider"></div>
+    <h1>Programează o <em>discuție</em> 1 la 1 cu echipa mea<br>despre programul de la 0 la B2</h1>
     <p class="hero-subtitle">
-      Vorbim 30 de minute despre nivelul tău actual, ce vrei să atingi cu germana și cum poate programul meu de 10 luni să te ducă acolo. Fără presiune, fără să te oblige la nimic.
+      Vorbești 30 de minute cu echipa mea despre nivelul tău actual, ce vrei să atingi cu germana și cum te poate duce acolo programul de la 0 la B2 în 10 luni. Fără presiune, fără să te oblige la nimic.
     </p>
-    <div class="hero-cta-row">
-      <a href="#formular" class="btn-primary">Vreau să programez întâlnirea →</a>
-    </div>
-  </div>
-</section>
-
-<!-- BENEFICII -->
-<section class="benefits">
-  <div class="container">
-    <p class="section-eyebrow">Ce primești în discuția 1 la 1</p>
-    <h2 class="section-title">O conversație onestă despre drumul tău</h2>
-    <p class="section-subtitle">Nu e o ședință de vânzare. E o ședință de înțelegere – pentru tine și pentru mine.</p>
-
-    <div class="benefits-grid">
-      <div class="benefit-card">
-        <span class="benefit-icon">🎯</span>
-        <h3 class="benefit-title">Înțelegem unde ești</h3>
-        <p class="benefit-text">Îmi spui ce ai încercat până acum, unde te-ai blocat, ce te frământă cu germana. Eu te ascult fără să te judec.</p>
-      </div>
-      <div class="benefit-card">
-        <span class="benefit-icon">📍</span>
-        <h3 class="benefit-title">Vedem unde vrei să ajungi</h3>
-        <p class="benefit-text">B2 pentru job? Pentru Anerkennung? Pentru integrare în Germania? Pentru tine? Discutăm exact ce obiectiv ai.</p>
-      </div>
-      <div class="benefit-card">
-        <span class="benefit-icon">🗺️</span>
-        <h3 class="benefit-title">Vezi cum arată drumul</h3>
-        <p class="benefit-text">Îți explic concret cum funcționează programul de 10 luni, ce faci în fiecare săptămână și de ce funcționează pentru români din DACH.</p>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -664,7 +650,7 @@ section { padding: 80px 0; }
   <div class="container">
     <div class="form-wrapper">
       <h2>Hai să ne cunoaștem</h2>
-      <p>Completează datele și apoi alegi împreună cu mine ora care îți convine.</p>
+      <p>Completează datele și apoi alegi ora care îți convine.</p>
 
       <!-- ============================================
            FORM HTML NATIV
@@ -690,7 +676,7 @@ section { padding: 80px 0; }
         </div>
 
         <button type="submit" id="bacSubmit">
-          Mergi mai departe la programare →
+          Mergi mai departe la programare
         </button>
 
         <div class="form-loading" id="formLoading">
@@ -698,14 +684,40 @@ section { padding: 80px 0; }
         </div>
 
         <div class="form-error" id="formError">
-          A apărut o problemă. Te rog încearcă din nou sau scrie-mi pe contact@claudiatoth.ro
+          A apărut o problemă. Te rog încearcă din nou sau scrie-ne pe contact@claudiatoth.ro
         </div>
 
         <p class="form-privacy">
-          Datele tale rămân la mine, nu le distribui nimănui.<br>
-          Vei primi un email de confirmare după programare.
+          <a href="https://claudiatoth.ro/politica-de-confidentialitate/" target="_blank" rel="noopener" class="privacy-link">Politica de confidențialitate</a>
         </p>
       </form>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFICII -->
+<section class="benefits">
+  <div class="container">
+    <p class="section-eyebrow">Ce primești în discuția 1 la 1</p>
+    <h2 class="section-title">O conversație onestă despre drumul tău</h2>
+    <p class="section-subtitle">Nu e o ședință de vânzare. E o ședință de înțelegere - pentru tine și pentru noi.</p>
+
+    <div class="benefits-grid">
+      <div class="benefit-card">
+        <span class="benefit-icon">🎯</span>
+        <h3 class="benefit-title">Înțelegem unde ești</h3>
+        <p class="benefit-text">Îmi spui ce ai încercat până acum, unde te-ai blocat, ce te frământă cu germana. Te ascultăm fără să te judecăm.</p>
+      </div>
+      <div class="benefit-card">
+        <span class="benefit-icon">📍</span>
+        <h3 class="benefit-title">Vedem unde vrei să ajungi</h3>
+        <p class="benefit-text">B2 pentru job? Pentru Anerkennung? Pentru integrare în Germania? Pentru tine? Discutăm exact ce obiectiv ai.</p>
+      </div>
+      <div class="benefit-card">
+        <span class="benefit-icon">🗺️</span>
+        <h3 class="benefit-title">Vezi cum arată drumul</h3>
+        <p class="benefit-text">Îți explicăm concret cum funcționează programul de 10 luni, ce faci în fiecare săptămână și de ce funcționează pentru români din DACH.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -725,12 +737,12 @@ section { padding: 80px 0; }
       <div class="process-step">
         <div class="step-number">2</div>
         <h3 class="step-title">Alegi data și ora</h3>
-        <p class="step-text">Te trimit la calendarul meu. Alegi un slot care îți convine, în următoarele zile.</p>
+        <p class="step-text">Te trimitem la calendarul echipei. Alegi un slot care îți convine, în următoarele zile.</p>
       </div>
       <div class="process-step">
         <div class="step-number">3</div>
         <h3 class="step-title">Vorbim pe Zoom</h3>
-        <p class="step-text">30 de minute liniștite. Te ascult, îți explic, răspund la întrebări.</p>
+        <p class="step-text">30 de minute liniștite. Te ascultăm, îți explicăm, răspundem la întrebări.</p>
       </div>
     </div>
   </div>
@@ -788,7 +800,7 @@ section { padding: 80px 0; }
       </div>
       <div class="faq-item">
         <div class="faq-question">Este o discuție de vânzare?</div>
-        <div class="faq-answer">Nu. Este o discuție de înțelegere reciprocă. Îți explic onest cum funcționează programul, dar tu decizi liniștit, fără presiune, dacă te potrivești sau nu. Mulți oameni pleacă de la discuție și revin după câteva săptămâni — și e perfect așa.</div>
+        <div class="faq-answer">Nu. Este o discuție de înțelegere reciprocă. Îți explicăm onest cum funcționează programul, dar tu decizi liniștit, fără presiune, dacă te potrivești sau nu. Mulți oameni pleacă de la discuție și revin după câteva săptămâni — și e perfect așa.</div>
       </div>
       <div class="faq-item">
         <div class="faq-question">Trebuie să știu deja ceva germană?</div>
@@ -796,7 +808,7 @@ section { padding: 80px 0; }
       </div>
       <div class="faq-item">
         <div class="faq-question">Costă ceva discuția 1 la 1?</div>
-        <div class="faq-answer">Nu, e gratuită. Eu îmi rezerv 30 de minute pentru tine fără nicio obligație din partea ta.</div>
+        <div class="faq-answer">Nu, e gratuită. Îți rezervăm 30 de minute fără nicio obligație din partea ta.</div>
       </div>
       <div class="faq-item">
         <div class="faq-question">Pe ce platformă vorbim?</div>
@@ -804,7 +816,7 @@ section { padding: 80px 0; }
       </div>
       <div class="faq-item">
         <div class="faq-question">Pot anula sau muta întâlnirea?</div>
-        <div class="faq-answer">Da, oricând. Din email-ul de confirmare ai butoane pentru reprogramare sau anulare. Te rog doar să o faci cu cel puțin câteva ore înainte, ca să pot oferi slotul altcuiva.</div>
+        <div class="faq-answer">Da, oricând. Din email-ul de confirmare ai butoane pentru reprogramare sau anulare. Te rog doar să o faci cu cel puțin câteva ore înainte, ca să putem oferi slotul altcuiva.</div>
       </div>
     </div>
   </div>
@@ -815,7 +827,7 @@ section { padding: 80px 0; }
   <div class="container">
     <h2>Hai să vorbim 30 de minute</h2>
     <p>Fără presiune, fără să te oblige la nimic. Doar o discuție onestă despre cum poți învăța germana.</p>
-    <a href="#formular" class="btn-primary">Programează întâlnirea →</a>
+    <a href="#formular" class="btn-primary">Programează întâlnirea</a>
   </div>
 </section>
 
@@ -823,7 +835,6 @@ section { padding: 80px 0; }
 <footer class="site-footer">
   <div class="container">
     <img src="https://assets.cdn.filesafe.space/3LqZHbDbZtP4PqdsObzb/media/6a0c990785275ddc5a450634.png" alt="Claudia Toth">
-    <div class="footer-divider"></div>
     <p class="footer-social">
       <a href="https://www.facebook.com/germanacuclaudiatoth" target="_blank">Facebook</a> ·
       <a href="https://www.instagram.com/germana_cu_claudia_toth/" target="_blank">Instagram</a> ·
