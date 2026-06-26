@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Programează o întâlnire 1 la 1 gratuită cu Claudia Toth pentru programul de germană de la 0 la B2 în 10 luni">
+<title>Întâlnire de consultanță 1 la 1 – Claudia Toth</title>
+
+<!-- ============================================
+     META FACEBOOK PIXEL — 1290920529628778
+     Track: PageView (automat), Lead (la submit form), Schedule (la programare)
+     ============================================ -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1290920529628778');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1290920529628778&ev=PageView&noscript=1"/></noscript>
+<!-- /META PIXEL -->
+
+<style>
+/* ============================================
+   BRAND CLAUDIA TOTH V2 - Crem + Verde + Auriu + Terracotta
+   ============================================ */
+:root {
+  --crem: #FAF6EE;
+  --ivory: #FBF7EF;
+  --green-primary: #10b981;
+  --green-dark: #047857;
+  --green-darker: #065f46;
+  --gold: #D4A574;
+  --gold-dark: #B88848;
+  --terracotta: #E07856;
+  --terracotta-dark: #C5654A;
+  --black-warm: #1F1B16;
+  --gray-warm: #5A5147;
+  --soft-divider: #E5DCC9;
+  --soft-bg: #F5F0E8;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: Georgia, 'Times New Roman', serif;
+  background-color: var(--crem);
+  color: var(--black-warm);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; height: auto; display: block; }
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ============================================
+   HEADER
+   ============================================ */
+.site-header {
+  background: var(--crem);
+  padding: 24px 0;
+  text-align: center;
+  border-bottom: 1px solid var(--soft-divider);
+}
+.site-header img { max-width: 280px; margin: 0 auto; }
+
+/* ============================================
+   HERO
+   ============================================ */
+.hero {
+  background: linear-gradient(135deg, #10b981 0%, #047857 100%);
+  color: white;
+  padding: 70px 0 80px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: radial-gradient(circle at 20% 50%, rgba(212,165,116,0.08) 0%, transparent 50%),
+                    radial-gradient(circle at 80% 80%, rgba(212,165,116,0.06) 0%, transparent 50%);
+  pointer-events: none;
+}
+.hero-eyebrow {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--gold);
+  margin-bottom: 18px;
+  position: relative;
+}
+.hero h1 {
+  font-family: Georgia, serif;
+  font-size: 44px;
+  line-height: 1.15;
+  font-weight: normal;
+  margin-bottom: 18px;
+  position: relative;
+}
+.hero h1 em {
+  color: var(--gold);
+  font-style: italic;
+}
+.hero-divider {
+  width: 80px;
+  height: 2px;
+  background: var(--gold);
+  margin: 24px auto;
+  position: relative;
+}
+.hero-subtitle {
+  font-size: 18px;
+  line-height: 1.6;
+  opacity: 0.95;
+  max-width: 640px;
+  margin: 0 auto;
+  position: relative;
+}
+.hero-cta-row {
+  margin-top: 36px;
+  position: relative;
+}
+.btn-primary {
+  display: inline-block;
+  background: var(--terracotta);
+  color: white;
+  padding: 18px 42px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  text-decoration: none;
+  box-shadow: 0 6px 20px rgba(224, 120, 86, 0.4);
+  transition: all 0.2s;
+  border: none;
+  cursor: pointer;
+}
+.btn-primary:hover {
+  background: var(--terracotta-dark);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 24px rgba(224, 120, 86, 0.5);
+}
+
+/* ============================================
+   SECTION GENERIC
+   ============================================ */
+section { padding: 80px 0; }
+.section-eyebrow {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--gold-dark);
+  text-align: center;
+  margin-bottom: 16px;
+}
+.section-title {
+  font-family: Georgia, serif;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--green-darker);
+  margin-bottom: 18px;
+  font-weight: normal;
+}
+.section-subtitle {
+  font-size: 17px;
+  line-height: 1.6;
+  text-align: center;
+  color: var(--gray-warm);
+  max-width: 700px;
+  margin: 0 auto 48px;
+}
+
+/* ============================================
+   BENEFICII (3 cards)
+   ============================================ */
+.benefits {
+  background: var(--ivory);
+}
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+  margin-top: 48px;
+}
+.benefit-card {
+  background: var(--crem);
+  border-left: 4px solid var(--gold);
+  border-radius: 0 12px 12px 0;
+  padding: 32px 28px;
+  text-align: left;
+}
+.benefit-icon {
+  font-size: 36px;
+  margin-bottom: 16px;
+  display: block;
+}
+.benefit-title {
+  font-family: Georgia, serif;
+  font-size: 20px;
+  color: var(--green-darker);
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+.benefit-text {
+  font-size: 15px;
+  color: var(--black-warm);
+  line-height: 1.6;
+}
+
+/* ============================================
+   FORMULAR SECTION
+   ============================================ */
+.form-section {
+  background: var(--crem);
+  padding: 80px 0;
+}
+.form-wrapper {
+  max-width: 580px;
+  margin: 0 auto;
+  background: var(--ivory);
+  border-radius: 16px;
+  padding: 48px 40px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+  border: 1px solid var(--soft-divider);
+}
+.form-wrapper h2 {
+  font-family: Georgia, serif;
+  font-size: 28px;
+  color: var(--green-darker);
+  margin-bottom: 12px;
+  text-align: center;
+  font-weight: normal;
+}
+.form-wrapper p {
+  text-align: center;
+  color: var(--gray-warm);
+  margin-bottom: 32px;
+  font-size: 16px;
+}
+
+/* HTML form nativ */
+.bac-form .field {
+  margin-bottom: 20px;
+}
+.bac-form label {
+  display: block;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--green-darker);
+  margin-bottom: 8px;
+  letter-spacing: 0.3px;
+}
+.bac-form input {
+  width: 100%;
+  padding: 14px 16px;
+  font-family: Georgia, serif;
+  font-size: 16px;
+  color: var(--black-warm);
+  background: var(--crem);
+  border: 2px solid var(--soft-divider);
+  border-radius: 8px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  outline: none;
+}
+.bac-form input:focus {
+  border-color: var(--green-primary);
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.15);
+}
+.bac-form input.error {
+  border-color: #dc2626;
+  background: #fef2f2;
+}
+.bac-form .error-msg {
+  display: none;
+  color: #dc2626;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  margin-top: 6px;
+}
+.bac-form input.error + .error-msg {
+  display: block;
+}
+.bac-form button {
+  width: 100%;
+  background: var(--terracotta);
+  color: white;
+  padding: 18px;
+  border: none;
+  border-radius: 10px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-top: 12px;
+  box-shadow: 0 4px 14px rgba(224, 120, 86, 0.35);
+  transition: all 0.2s;
+}
+.bac-form button:hover {
+  background: var(--terracotta-dark);
+  transform: translateY(-1px);
+}
+.bac-form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+.form-loading {
+  display: none;
+  text-align: center;
+  color: var(--gray-warm);
+  font-size: 14px;
+  margin-top: 16px;
+}
+.form-error {
+  display: none;
+  background: #fef2f2;
+  color: #991b1b;
+  padding: 14px;
+  border-radius: 8px;
+  margin-top: 16px;
+  font-size: 14px;
+  text-align: center;
+}
+.form-privacy {
+  text-align: center;
+  font-size: 12px;
+  color: var(--gray-warm);
+  margin-top: 16px;
+  line-height: 1.5;
+}
+
+/* ============================================
+   PROCES (Cum funcționează)
+   ============================================ */
+.process {
+  background: var(--ivory);
+}
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 32px;
+  margin-top: 48px;
+}
+.process-step {
+  text-align: center;
+  position: relative;
+}
+.step-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  background: linear-gradient(135deg, var(--green-primary), var(--green-dark));
+  color: white;
+  border-radius: 50%;
+  font-family: Georgia, serif;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 14px rgba(16, 185, 129, 0.3);
+}
+.step-title {
+  font-family: Georgia, serif;
+  font-size: 19px;
+  color: var(--green-darker);
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.step-text {
+  font-size: 15px;
+  color: var(--gray-warm);
+  line-height: 1.6;
+}
+
+/* ============================================
+   TESTIMONIALE
+   ============================================ */
+.testimonials {
+  background: var(--crem);
+}
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  margin-top: 48px;
+}
+.testimonial-card {
+  background: var(--ivory);
+  padding: 32px 28px;
+  border-radius: 12px;
+  border-left: 4px solid var(--green-primary);
+  position: relative;
+}
+.testimonial-quote {
+  font-family: Georgia, serif;
+  font-style: italic;
+  color: var(--black-warm);
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+.testimonial-author {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--green-darker);
+}
+.testimonial-role {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  color: var(--gray-warm);
+  margin-top: 2px;
+}
+
+/* ============================================
+   GARANȚIE BANNER
+   ============================================ */
+.guarantee {
+  background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
+  padding: 60px 0;
+}
+.guarantee-box {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 40px 32px;
+  background: var(--crem);
+  border-radius: 16px;
+  border: 2px solid var(--green-primary);
+  box-shadow: 0 4px 20px rgba(16, 185, 129, 0.12);
+}
+.guarantee-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+.guarantee-title {
+  font-family: Georgia, serif;
+  font-size: 26px;
+  color: var(--green-darker);
+  margin-bottom: 14px;
+  font-weight: bold;
+}
+.guarantee-text {
+  font-size: 16px;
+  color: var(--black-warm);
+  line-height: 1.6;
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+/* ============================================
+   FAQ
+   ============================================ */
+.faq {
+  background: var(--ivory);
+}
+.faq-list {
+  max-width: 760px;
+  margin: 48px auto 0;
+}
+.faq-item {
+  background: var(--crem);
+  border-radius: 10px;
+  margin-bottom: 14px;
+  border-left: 3px solid var(--gold);
+  overflow: hidden;
+}
+.faq-question {
+  padding: 22px 28px;
+  cursor: pointer;
+  font-family: Georgia, serif;
+  font-size: 17px;
+  color: var(--green-darker);
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+}
+.faq-question::after {
+  content: '+';
+  font-size: 24px;
+  color: var(--gold-dark);
+  font-weight: normal;
+  transition: transform 0.2s;
+}
+.faq-item.open .faq-question::after {
+  content: '−';
+}
+.faq-answer {
+  display: none;
+  padding: 0 28px 22px;
+  color: var(--black-warm);
+  font-size: 15px;
+  line-height: 1.7;
+}
+.faq-item.open .faq-answer {
+  display: block;
+}
+
+/* ============================================
+   FINAL CTA SECTION
+   ============================================ */
+.final-cta {
+  background: linear-gradient(135deg, #10b981 0%, #047857 100%);
+  color: white;
+  text-align: center;
+  padding: 80px 0;
+}
+.final-cta h2 {
+  font-family: Georgia, serif;
+  font-size: 36px;
+  margin-bottom: 18px;
+  font-weight: normal;
+}
+.final-cta p {
+  font-size: 18px;
+  opacity: 0.95;
+  margin-bottom: 32px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+.site-footer {
+  background: var(--black-warm);
+  color: var(--soft-divider);
+  padding: 50px 0 30px;
+  text-align: center;
+}
+.site-footer img { max-width: 200px; margin: 0 auto 24px; }
+.footer-divider {
+  width: 60px;
+  height: 1px;
+  background: var(--gold);
+  margin: 0 auto 24px;
+}
+.footer-social {
+  margin-bottom: 18px;
+  font-family: Georgia, serif;
+  font-size: 14px;
+}
+.footer-social a {
+  color: var(--gold);
+  text-decoration: none;
+  margin: 0 12px;
+}
+.footer-social a:hover { color: var(--gold-dark); }
+.footer-site {
+  font-family: Georgia, serif;
+  font-size: 14px;
+}
+.footer-site a { color: var(--gold); text-decoration: none; }
+
+/* ============================================
+   RESPONSIVE MOBILE
+   ============================================ */
+@media (max-width: 768px) {
+  .hero { padding: 50px 0 60px; }
+  .hero h1 { font-size: 32px; }
+  .hero-subtitle { font-size: 16px; }
+  .section-title { font-size: 28px; }
+  section { padding: 60px 0; }
+  .form-wrapper { padding: 32px 24px; }
+  .form-wrapper h2 { font-size: 24px; }
+  .benefit-card, .testimonial-card { padding: 24px 20px; }
+}
+
+/* ============================================
+   LOADING SPINNER pentru submit
+   ============================================ */
+.spinner {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgba(255,255,255,0.3);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <img src="https://assets.cdn.filesafe.space/3LqZHbDbZtP4PqdsObzb/media/6a0c9907593738bfbbc98015.png" alt="Claudia Toth – Curs autorizat de limba germană">
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <p class="hero-eyebrow">Întâlnire 1 la 1 · Gratuit · 30 de minute</p>
+    <h1>Programează o <em>discuție</em> 1 la 1 cu mine<br>despre programul de la 0 la B2</h1>
+    <div class="hero-divider"></div>
+    <p class="hero-subtitle">
+      Vorbim 30 de minute despre nivelul tău actual, ce vrei să atingi cu germana și cum poate programul meu de 10 luni să te ducă acolo. Fără presiune, fără să te oblige la nimic.
+    </p>
+    <div class="hero-cta-row">
+      <a href="#formular" class="btn-primary">Vreau să programez întâlnirea →</a>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFICII -->
+<section class="benefits">
+  <div class="container">
+    <p class="section-eyebrow">Ce primești în discuția 1 la 1</p>
+    <h2 class="section-title">O conversație onestă despre drumul tău</h2>
+    <p class="section-subtitle">Nu e o ședință de vânzare. E o ședință de înțelegere – pentru tine și pentru mine.</p>
+
+    <div class="benefits-grid">
+      <div class="benefit-card">
+        <span class="benefit-icon">🎯</span>
+        <h3 class="benefit-title">Înțelegem unde ești</h3>
+        <p class="benefit-text">Îmi spui ce ai încercat până acum, unde te-ai blocat, ce te frământă cu germana. Eu te ascult fără să te judec.</p>
+      </div>
+      <div class="benefit-card">
+        <span class="benefit-icon">📍</span>
+        <h3 class="benefit-title">Vedem unde vrei să ajungi</h3>
+        <p class="benefit-text">B2 pentru job? Pentru Anerkennung? Pentru integrare în Germania? Pentru tine? Discutăm exact ce obiectiv ai.</p>
+      </div>
+      <div class="benefit-card">
+        <span class="benefit-icon">🗺️</span>
+        <h3 class="benefit-title">Vezi cum arată drumul</h3>
+        <p class="benefit-text">Îți explic concret cum funcționează programul de 10 luni, ce faci în fiecare săptămână și de ce funcționează pentru români din DACH.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FORMULAR -->
+<section class="form-section" id="formular">
+  <div class="container">
+    <div class="form-wrapper">
+      <h2>Hai să ne cunoaștem</h2>
+      <p>Completează datele și apoi alegi împreună cu mine ora care îți convine.</p>
+
+      <!-- ============================================
+           FORM HTML NATIV
+           Submit handler: vezi JS de mai jos
+           ============================================ -->
+      <form class="bac-form" id="bacForm" novalidate>
+        <div class="field">
+          <label for="firstName">Nume și prenume *</label>
+          <input type="text" id="firstName" name="firstName" required autocomplete="name" placeholder="Ex: Maria Popescu">
+          <div class="error-msg">Te rog completează numele.</div>
+        </div>
+
+        <div class="field">
+          <label for="email">Adresă email *</label>
+          <input type="email" id="email" name="email" required autocomplete="email" placeholder="ex: maria@gmail.com">
+          <div class="error-msg">Te rog completează un email valid.</div>
+        </div>
+
+        <div class="field">
+          <label for="phone">Număr de telefon *</label>
+          <input type="tel" id="phone" name="phone" required autocomplete="tel" placeholder="Ex: +49 176 1234567">
+          <div class="error-msg">Te rog completează numărul de telefon.</div>
+        </div>
+
+        <button type="submit" id="bacSubmit">
+          Mergi mai departe la programare →
+        </button>
+
+        <div class="form-loading" id="formLoading">
+          <span class="spinner"></span> Te trimit la programare...
+        </div>
+
+        <div class="form-error" id="formError">
+          A apărut o problemă. Te rog încearcă din nou sau scrie-mi pe contact@claudiatoth.ro
+        </div>
+
+        <p class="form-privacy">
+          Datele tale rămân la mine, nu le distribui nimănui.<br>
+          Vei primi un email de confirmare după programare.
+        </p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- PROCES (Cum funcționează) -->
+<section class="process">
+  <div class="container">
+    <p class="section-eyebrow">Cum funcționează</p>
+    <h2 class="section-title">3 pași simpli</h2>
+
+    <div class="process-steps">
+      <div class="process-step">
+        <div class="step-number">1</div>
+        <h3 class="step-title">Completezi formularul</h3>
+        <p class="step-text">Nume, email, telefon. Atât. Sub un minut.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-number">2</div>
+        <h3 class="step-title">Alegi data și ora</h3>
+        <p class="step-text">Te trimit la calendarul meu. Alegi un slot care îți convine, în următoarele zile.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-number">3</div>
+        <h3 class="step-title">Vorbim pe Zoom</h3>
+        <p class="step-text">30 de minute liniștite. Te ascult, îți explic, răspund la întrebări.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALE -->
+<section class="testimonials">
+  <div class="container">
+    <p class="section-eyebrow">Ce spun cursanții mei</p>
+    <h2 class="section-title">Sunt aici de mulți ani – iată câteva voci</h2>
+
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <p class="testimonial-quote">"Eu am ajuns la nivelul B2 mai repede decât credeam. Cu Claudia chiar simți că ai un profesor care te tine de mâna, nu te lasă să cazi."</p>
+        <div class="testimonial-author">Daniela</div>
+        <div class="testimonial-role">Cursantă, Germania – salariu +1200€</div>
+      </div>
+      <div class="testimonial-card">
+        <p class="testimonial-quote">"Acum vorbesc cu vecinii, cu doctorul, cu profesorii copiilor. Înainte aveam un blocaj total."</p>
+        <div class="testimonial-author">Ana Maria</div>
+        <div class="testimonial-role">Cursantă, Austria – mamă, integrare DACH</div>
+      </div>
+      <div class="testimonial-card">
+        <p class="testimonial-quote">"Atmosfera e ca într-o familie. Claudia explică pe înțelesul tău, fără termeni complicați. Și are răbdare cu adevărat."</p>
+        <div class="testimonial-author">Raluca</div>
+        <div class="testimonial-role">Cursantă, Elveția – Anerkennung obținut</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GARANȚIE -->
+<section class="guarantee">
+  <div class="container">
+    <div class="guarantee-box">
+      <div class="guarantee-icon">🎓</div>
+      <h2 class="guarantee-title">Curs autorizat de Ministerul Educației</h2>
+      <p class="guarantee-text">
+        Sunt profesor de germană cu peste 30 de ani de experiență, cu Masterat și Gradul I didactic, iar cursul meu este autorizat oficial. Asta înseamnă că la final primești o diplomă recunoscută legal, nu doar o adeverință online.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <div class="container">
+    <p class="section-eyebrow">Întrebări frecvente</p>
+    <h2 class="section-title">Ce vor să știe alții înainte să se programeze</h2>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-question">Cât durează discuția 1 la 1?</div>
+        <div class="faq-answer">Aproximativ 30 de minute. Suficient cât să înțelegem împreună unde ești, ce vrei, și dacă ne potrivim să lucrăm împreună.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Este o discuție de vânzare?</div>
+        <div class="faq-answer">Nu. Este o discuție de înțelegere reciprocă. Îți explic onest cum funcționează programul, dar tu decizi liniștit, fără presiune, dacă te potrivești sau nu. Mulți oameni pleacă de la discuție și revin după câteva săptămâni — și e perfect așa.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Trebuie să știu deja ceva germană?</div>
+        <div class="faq-answer">Nu. Programul meu pornește de la 0 (A0) și te duce până la B2 în 10 luni. Avem oameni care au început fără să cunoască niciun cuvânt de germană.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Costă ceva discuția 1 la 1?</div>
+        <div class="faq-answer">Nu, e gratuită. Eu îmi rezerv 30 de minute pentru tine fără nicio obligație din partea ta.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Pe ce platformă vorbim?</div>
+        <div class="faq-answer">Pe Zoom. După ce alegi un slot, primești pe email link-ul de Zoom plus o invitație în calendar (Google / Outlook / Apple).</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Pot anula sau muta întâlnirea?</div>
+        <div class="faq-answer">Da, oricând. Din email-ul de confirmare ai butoane pentru reprogramare sau anulare. Te rog doar să o faci cu cel puțin câteva ore înainte, ca să pot oferi slotul altcuiva.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+  <div class="container">
+    <h2>Hai să vorbim 30 de minute</h2>
+    <p>Fără presiune, fără să te oblige la nimic. Doar o discuție onestă despre cum poți învăța germana.</p>
+    <a href="#formular" class="btn-primary">Programează întâlnirea →</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <img src="https://assets.cdn.filesafe.space/3LqZHbDbZtP4PqdsObzb/media/6a0c990785275ddc5a450634.png" alt="Claudia Toth">
+    <div class="footer-divider"></div>
+    <p class="footer-social">
+      <a href="https://www.facebook.com/germanacuclaudiatoth" target="_blank">Facebook</a> ·
+      <a href="https://www.instagram.com/germana_cu_claudia_toth/" target="_blank">Instagram</a> ·
+      <a href="https://www.youtube.com/@GermanaCuClaudiaToth" target="_blank">YouTube</a> ·
+      <a href="https://www.tiktok.com/@germanacuclaudiatoth" target="_blank">TikTok</a>
+    </p>
+    <p class="footer-site"><a href="https://www.claudiatoth.ro">www.claudiatoth.ro</a></p>
+  </div>
+</footer>
+
+<!-- ============================================
+     JAVASCRIPT
+     ============================================ -->
+<script>
+/* ===== FAQ toggle ===== */
+document.querySelectorAll('.faq-question').forEach(q => {
+  q.addEventListener('click', () => {
+    q.parentElement.classList.toggle('open');
+  });
+});
+
+/* ===== CONFIG ===== */
+const GHL_API_BASE = 'https://services.leadconnectorhq.com';
+const GHL_LOCATION_ID = '3LqZHbDbZtP4PqdsObzb';
+/* SECURITATE: NU punem token GHL pe pagina publica (s-ar expune in View Source).
+   Lead-ul ajunge in GHL prin integrarea nativa Calendly -> GHL la programare.
+   Daca vrei captura la submit (inainte de Calendly), genereaza un PIT cu scope
+   MINIM (doar contacts.write + opportunities.write) si pune-l aici. */
+const GHL_PUBLIC_PIT = '';
+
+const CALENDLY_BASE = 'https://calendly.com/d/ck8r-n46-gq2/intalnire-de-consultan-a-1-1';
+const BAC_TAG = 'inscriere 1 la 1';
+const PIPELINE_ID = 'kKXKRLCzimN51KOPidMG';
+const STAGE_ID_BAC_INITIAT = 'c465dded-a7ab-4793-aed0-f6d1334b0d45';
+const ASSIGNED_TO_USER_ID = 'K85lSlHqeAuggY3Aa549'; // Claudia Toth
+
+/* ===== FORM SUBMIT ===== */
+const form = document.getElementById('bacForm');
+const submitBtn = document.getElementById('bacSubmit');
+const loadingMsg = document.getElementById('formLoading');
+const errorMsg = document.getElementById('formError');
+
+function validateForm() {
+  let valid = true;
+  const inputs = form.querySelectorAll('input[required]');
+  inputs.forEach(input => {
+    const v = input.value.trim();
+    if (!v) {
+      input.classList.add('error');
+      valid = false;
+    } else if (input.type === 'email' && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)) {
+      input.classList.add('error');
+      valid = false;
+    } else {
+      input.classList.remove('error');
+    }
+  });
+  return valid;
+}
+
+form.addEventListener('input', e => {
+  if (e.target.classList.contains('error')) {
+    e.target.classList.remove('error');
+  }
+});
+
+form.addEventListener('submit', async e => {
+  e.preventDefault();
+  errorMsg.style.display = 'none';
+
+  if (!validateForm()) return;
+
+  const fullName = document.getElementById('firstName').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const phone = document.getElementById('phone').value.trim();
+
+  const parts = fullName.split(/\s+/);
+  const firstName = parts[0];
+  const lastName = parts.slice(1).join(' ') || '';
+
+  submitBtn.disabled = true;
+  submitBtn.innerHTML = '<span class="spinner"></span>Te trimit la programare...';
+  loadingMsg.style.display = 'block';
+
+  // Facebook Pixel - Lead
+  if (typeof fbq !== 'undefined') {
+    fbq('track', 'Lead', {
+      content_name: 'BAC - Intalnire consultanta',
+      content_category: 'Consultanta 1 la 1',
+      value: 0,
+      currency: 'EUR'
+    });
+  }
+
+  // Best-effort: creeaza contact in GHL DOAR daca exista token configurat (optional, non-blocant)
+  if (GHL_PUBLIC_PIT) {
+    try {
+      const resp = await fetch(`${GHL_API_BASE}/contacts/upsert`, {
+        method: 'POST',
+        headers: {
+          'Authorization': `Bearer ${GHL_PUBLIC_PIT}`,
+          'Version': '2021-07-28',
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          locationId: GHL_LOCATION_ID,
+          firstName: firstName, lastName: lastName, name: fullName,
+          email: email, phone: phone,
+          tags: [BAC_TAG, 'sursa-pagina-BAC'],
+          source: 'Landing Page - BAC consultanta'
+        })
+      });
+      if (resp.ok) {
+        const cd = await resp.json();
+        const contactId = cd.contact?.id || cd.id;
+        if (contactId) {
+          fetch(`${GHL_API_BASE}/opportunities/`, {
+            method: 'POST',
+            headers: {
+              'Authorization': `Bearer ${GHL_PUBLIC_PIT}`,
+              'Version': '2021-07-28',
+              'Content-Type': 'application/json',
+              'Accept': 'application/json'
+            },
+            body: JSON.stringify({
+              pipelineId: PIPELINE_ID, locationId: GHL_LOCATION_ID,
+              name: `BAC - ${fullName}`, pipelineStageId: STAGE_ID_BAC_INITIAT,
+              status: 'open', contactId: contactId, monetaryValue: 0,
+              assignedTo: ASSIGNED_TO_USER_ID, source: 'Landing Page BAC'
+            })
+          }).catch(() => {});
+        }
+      }
+    } catch (err) {
+      console.warn('GHL sync skipped (non-fatal):', err);
+    }
+  }
+
+  // Facebook Pixel - CompleteRegistration
+  if (typeof fbq !== 'undefined') {
+    fbq('track', 'CompleteRegistration', { content_name: 'BAC Form Submit', status: true });
+  }
+
+  // Redirect MEREU la Calendly cu date pre-completate (nume, email, telefon)
+  const calendlyUrl = new URL(CALENDLY_BASE);
+  calendlyUrl.searchParams.set('name', fullName);
+  calendlyUrl.searchParams.set('email', email);
+  calendlyUrl.searchParams.set('a1', phone);
+  calendlyUrl.searchParams.set('utm_source', 'GHL_BAC_landing');
+  calendlyUrl.searchParams.set('utm_medium', 'funnel');
+  calendlyUrl.searchParams.set('utm_campaign', 'BAC_consultanta');
+  setTimeout(() => { window.location.href = calendlyUrl.toString(); }, 400);
+});
+</script>
+
+</body>
+</html>
